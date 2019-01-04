@@ -1,16 +1,17 @@
 module.exports = {
     "env": {
         "browser": true,
-        "node": true
+        "node": true,
+        "es6": true,
     },
     "extends": "eslint:recommended",
     "parserOptions": {
-        "ecmaVersion": 5
+        "ecmaVersion": 6
     },
     "rules": {
         "indent": [
-            "error",
-            "tab"
+            2,
+            4
         ],
         "linebreak-style": [
             "error",
@@ -23,6 +24,18 @@ module.exports = {
         "semi": [
             "error",
             "always"
-        ]
+        ],
+        "comma-dangle":[
+            2,
+            "always-multiline"
+        ],
+        "no-console": "off",
+        "no-restricted-syntax": [
+            "error",
+            {
+                "selector": "CallExpression[callee.object.name='console'][callee.property.name!=/^(log|warn|error|info|trace)$/]",
+                "message": "Unexpected property on console object was called"
+            }
+        ],
     }
 };

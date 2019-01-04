@@ -1,13 +1,13 @@
-'use strict'; //es6 기능 : 블록 스코프 변수 선언
+"use strict"; //es6 기능 : 블록 스코프 변수 선언
 
 var sentences = [{
-  subject: 'JavaScript',
-  verb: 'is',
-  object: 'great'
+  subject: "JavaScript",
+  verb: "is",
+  object: "great"
 }, {
-  subject: '1ilsang.',
-  verb: 'blog.',
-  object: 'me'
+  subject: "1ilsang",
+  verb: "blog",
+  object: "me"
 }]; //ES6 기능 : 객체 분해
 
 function say(_ref) {
